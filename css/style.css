@@ -85,3 +85,57 @@ i {
     font-size: 2em;
     color: rgb(234, 243, 150);
 }
+
+button {
+    border-radius: .6rem;
+    cursor: pointer;
+    padding: .4rem;
+    background-color: rgba(17, 20, 248, 0.4);
+    margin-left: 5rem;
+    margin-bottom: -34rem;
+}
+
+.control {
+    align-items: center;
+    text-align: center;
+    display: none;
+    gap: 1rem;
+    flex-direction: row;
+    margin: .5rem;
+    
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url('../img/espacio.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-area: 1fr;
+    }
+    #lives {
+        font-size: 1.5rem;
+    }
+    .control {
+        display: flex;
+    }
+    .control i {
+        padding: 4px 5px;
+        font-size: 1rem;
+        grid-template-rows: 1fr;
+    }
+    .score {
+        margin-left: -170px;
+        font-size: 1.5rem;
+    }
+    .high-score {
+        position: none;
+        margin-left: -440px;
+        font-size: 1.5rem;
+    }
+    
+}

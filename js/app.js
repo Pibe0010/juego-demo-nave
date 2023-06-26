@@ -5,6 +5,7 @@ let explosion = document.getElementById("explosion");
 let live = document.querySelector("i");
 let times = document.getElementById("times");
 
+const controls = document.querySelectorAll(".control i")
 const scoreElement = document.querySelector(".score");
 const highScoreElement = document.querySelector(".high-score");
 
@@ -12,6 +13,7 @@ const highScoreElement = document.querySelector(".high-score");
 let lives = 5;
 let second = 60;
 let score = 0;
+
 
 let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerHTML = `High Score : ${highScore}`;
