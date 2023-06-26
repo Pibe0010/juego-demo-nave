@@ -25,7 +25,7 @@ body {
     overflow: hidden;
     display: grid;
     grid-template-rows: 1fr;
-    grid-area: 1fr;
+    
 }
 
 .bala {
@@ -118,24 +118,66 @@ button {
         grid-area: 1fr;
     }
     #lives {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+    #times {
+        
+        font-size: 1rem;
     }
     .control {
         display: flex;
+        gap: 5px;
+        margin-left: -5rem;
+        margin-bottom: 13rem;
+        align-items: center;
+        justify-content: center;
+        
     }
     .control i {
-        padding: 4px 5px;
+        padding: 4px 40px;
         font-size: 1rem;
-        grid-template-rows: 1fr;
+        gap: 80px;
     }
     .score {
-        margin-left: -170px;
-        font-size: 1.5rem;
+        margin-left: -220px;
+        font-size: 1rem;
     }
     .high-score {
         position: none;
-        margin-left: -440px;
-        font-size: 1.5rem;
+        margin-left: -550px;
+        font-size: 1rem;
     }
     
+}
+@media screen and (max-width: 300px) {
+
+    #lives {
+        font-size: .7rem;
+    }
+    #times {
+        margin-left: 100px;
+        font-size: .9rem;
+    }
+    .control {
+        display: flex;
+        margin-bottom: 13rem;
+        margin-left: -4.3rem;
+        gap: 1px;
+        align-items: center;
+        justify-content: center;
+    }
+    .control i {
+        padding: 4px 5px;
+        font-size: .7rem;
+        
+    }
+    .score {
+        margin-left: -220px;
+        font-size: .7rem;
+    }
+    .high-score {
+        position: none;
+        margin-left: -550px;
+        font-size: .7rem;
+    }
 }

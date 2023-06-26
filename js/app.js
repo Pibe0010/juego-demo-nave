@@ -16,14 +16,14 @@ let score = 0;
 
 
 let highScore = localStorage.getItem("high-score") || 0;
-highScoreElement.innerHTML = `High Score : ${highScore}`;
+highScoreElement.innerHTML = `HighScore : ${highScore}`;
 
 setInterval(() => {
     second--;
     times.textContent = second;
 
     if(second == 0) {
-        alert("YOU WIN");
+        //alert("YOU WIN");
         location.reload();
     }
 }, 1000);
@@ -100,7 +100,7 @@ setInterval(() => {
             lives--;
             live.textContent = lives;
             if(lives == -1) {
-                alert("GAME OVER")
+                //alert("GAME OVER")
                 location.reload();
                 }
                     
